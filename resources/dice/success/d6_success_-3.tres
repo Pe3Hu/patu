@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ResourceDiceSuccess" load_steps=2 format=3 uid="uid://ffersohxs0xh"]
+
+[ext_resource type="Script" uid="uid://ck7e7o7g3e5af" path="res://resources/dice/success/resource_dice_success.gd" id="1_7s4vu"]
+
+[resource]
+script = ExtResource("1_7s4vu")
+types = Array[String]([])
+values = Array[int]([1, 1, 0, -1, -2, -2])
+metadata/_custom_type_script = "uid://ck7e7o7g3e5af"

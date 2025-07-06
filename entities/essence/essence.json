@@ -1,0 +1,72 @@
+[
+ {
+  "type": "defense",
+  "subtype": "block",
+  "will": 30,
+  "mind": 10,
+  "body": 60
+ },
+ {
+  "type": "defense",
+  "subtype": "parry",
+  "will": 60,
+  "mind": 30,
+  "body": 10
+ },
+ {
+  "type": "defense",
+  "subtype": "dodge",
+  "will": 10,
+  "mind": 60,
+  "body": 30
+ },
+ {
+  "type": "offense",
+  "subtype": "puncture",
+  "will": 30,
+  "mind": 60,
+  "body": 10
+ },
+ {
+  "type": "offense",
+  "subtype": "slash",
+  "will": 10,
+  "mind": 30,
+  "body": 60
+ },
+ {
+  "type": "offense",
+  "subtype": "pressure",
+  "will": 60,
+  "mind": 10,
+  "body": 30
+ },
+ {
+  "type": "element",
+  "subtype": "aqua",
+  "will": 15,
+  "mind": 30,
+  "body": 30
+ },
+ {
+  "type": "element",
+  "subtype": "wind",
+  "will": 25,
+  "mind": 35,
+  "body": 15
+ },
+ {
+  "type": "element",
+  "subtype": "fire",
+  "will": 35,
+  "mind": 20,
+  "body": 20
+ },
+ {
+  "type": "element",
+  "subtype": "earth",
+  "will": 25,
+  "mind": 15,
+  "body": 35
+ }
+]

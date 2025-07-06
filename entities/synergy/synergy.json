@@ -1,0 +1,668 @@
+[
+
+  {
+	"first": "block",
+	"second": "fast",
+	"value": "-2"
+  },
+  {
+	"first": "parry",
+	"second": "fast",
+	"value": "1"
+  },
+  {
+	"first": "dodge",
+	"second": "fast",
+	"value": "1"
+  },
+  {
+	"first": "block",
+	"second": "basic",
+	"value": "0"
+  },
+  {
+	"first": "parry",
+	"second": "basic",
+	"value": "0"
+  },
+  {
+	"first": "dodge",
+	"second": "basic",
+	"value": "0"
+  },
+  {
+	"first": "block",
+	"second": "slow",
+	"value": "2"
+  },
+  {
+	"first": "parry",
+	"second": "slow",
+	"value": "-1"
+  },
+  {
+	"first": "dodge",
+	"second": "slow",
+	"value": "-1"
+  },
+  {
+	"first": "puncture",
+	"second": "fast",
+	"value": "2"
+  },
+  {
+	"first": "slash",
+	"second": "fast",
+	"value": "0"
+  },
+  {
+	"first": "pressure",
+	"second": "fast",
+	"value": "-1"
+  },
+  {
+	"first": "puncture",
+	"second": "basic",
+	"value": "0"
+  },
+  {
+	"first": "slash",
+	"second": "basic",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "basic",
+	"value": "0"
+  },
+  {
+	"first": "puncture",
+	"second": "slow",
+	"value": "-1"
+  },
+  {
+	"first": "slash",
+	"second": "slow",
+	"value": "0"
+  },
+  {
+	"first": "pressure",
+	"second": "slow",
+	"value": "2"
+  },
+  {
+	"first": "block",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "parry",
+	"second": "spear",
+	"value": "-2"
+  },
+  {
+	"first": "dodge",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "block",
+	"second": "dagger",
+	"value": "-2"
+  },
+  {
+	"first": "parry",
+	"second": "dagger",
+	"value": "1"
+  },
+  {
+	"first": "dodge",
+	"second": "dagger",
+	"value": "1"
+  },
+  {
+	"first": "block",
+	"second": "axe",
+	"value": "0"
+  },
+  {
+	"first": "parry",
+	"second": "axe",
+	"value": "1"
+  },
+  {
+	"first": "dodge",
+	"second": "axe",
+	"value": "-1"
+  },
+  {
+	"first": "block",
+	"second": "sword",
+	"value": "-1"
+  },
+  {
+	"first": "parry",
+	"second": "sword",
+	"value": "1"
+  },
+  {
+	"first": "dodge",
+	"second": "sword",
+	"value": "0"
+  },
+  {
+	"first": "block",
+	"second": "hammer",
+	"value": "2"
+  },
+  {
+	"first": "parry",
+	"second": "hammer",
+	"value": "-1"
+  },
+  {
+	"first": "dodge",
+	"second": "hammer",
+	"value": "-1"
+  },
+  {
+	"first": "puncture",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "slash",
+	"second": "spear",
+	"value": "-2"
+  },
+  {
+	"first": "pressure",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "puncture",
+	"second": "dagger",
+	"value": "1"
+  },
+  {
+	"first": "slash",
+	"second": "dagger",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "dagger",
+	"value": "-2"
+  },
+  {
+	"first": "puncture",
+	"second": "axe",
+	"value": "-1"
+  },
+  {
+	"first": "slash",
+	"second": "axe",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "axe",
+	"value": "0"
+  },
+  {
+	"first": "puncture",
+	"second": "sword",
+	"value": "0"
+  },
+  {
+	"first": "slash",
+	"second": "sword",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "sword",
+	"value": "-1"
+  },
+  {
+	"first": "puncture",
+	"second": "hammer",
+	"value": "-1"
+  },
+  {
+	"first": "slash",
+	"second": "hammer",
+	"value": "-1"
+  },
+  {
+	"first": "pressure",
+	"second": "hammer",
+	"value": "2"
+  },
+  {
+	"first": "snake",
+	"second": "spear",
+	"value": "2"
+  },
+  {
+	"first": "mantis",
+	"second": "spear",
+	"value": "-2"
+  },
+  {
+	"first": "bear",
+	"second": "spear",
+	"value": "-1"
+  },
+  {
+	"first": "tiger",
+	"second": "spear",
+	"value": "0"
+  },
+  {
+	"first": "elephant",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "snake",
+	"second": "dagger",
+	"value": "2"
+  },
+  {
+	"first": "mantis",
+	"second": "dagger",
+	"value": "0"
+  },
+  {
+	"first": "bear",
+	"second": "dagger",
+	"value": "-2"
+  },
+  {
+	"first": "tiger",
+	"second": "dagger",
+	"value": "1"
+  },
+  {
+	"first": "elephant",
+	"second": "dagger",
+	"value": "-1"
+  },
+  {
+	"first": "snake",
+	"second": "axe",
+	"value": "-2"
+  },
+  {
+	"first": "mantis",
+	"second": "axe",
+	"value": "2"
+  },
+  {
+	"first": "bear",
+	"second": "axe",
+	"value": "2"
+  },
+  {
+	"first": "tiger",
+	"second": "axe",
+	"value": "-2"
+  },
+  {
+	"first": "elephant",
+	"second": "axe",
+	"value": "0"
+  },
+  {
+	"first": "snake",
+	"second": "sword",
+	"value": "0"
+  },
+  {
+	"first": "mantis",
+	"second": "sword",
+	"value": "2"
+  },
+  {
+	"first": "bear",
+	"second": "sword",
+	"value": "-1"
+  },
+  {
+	"first": "tiger",
+	"second": "sword",
+	"value": "1"
+  },
+  {
+	"first": "elephant",
+	"second": "sword",
+	"value": "-2"
+  },
+  {
+	"first": "snake",
+	"second": "hammer",
+	"value": "-2"
+  },
+  {
+	"first": "mantis",
+	"second": "hammer",
+	"value": "-2"
+  },
+  {
+	"first": "bear",
+	"second": "hammer",
+	"value": "2"
+  },
+  {
+	"first": "tiger",
+	"second": "hammer",
+	"value": "0"
+  },
+  {
+	"first": "elephant",
+	"second": "hammer",
+	"value": "2"
+  },
+  {
+	"first": "fast",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "basic",
+	"second": "spear",
+	"value": "1"
+  },
+  {
+	"first": "slow",
+	"second": "spear",
+	"value": "-2"
+  },
+  {
+	"first": "fast",
+	"second": "dagger",
+	"value": "2"
+  },
+  {
+	"first": "basic",
+	"second": "dagger",
+	"value": "-1"
+  },
+  {
+	"first": "slow",
+	"second": "dagger",
+	"value": "-1"
+  },
+  {
+	"first": "fast",
+	"second": "axe",
+	"value": "-1"
+  },
+  {
+	"first": "basic",
+	"second": "axe",
+	"value": "-1"
+  },
+  {
+	"first": "slow",
+	"second": "axe",
+	"value": "2"
+  },
+  {
+	"first": "fast",
+	"second": "sword",
+	"value": "0"
+  },
+  {
+	"first": "basic",
+	"second": "sword",
+	"value": "1"
+  },
+  {
+	"first": "slow",
+	"second": "sword",
+	"value": "-1"
+  },
+  {
+	"first": "fast",
+	"second": "hammer",
+	"value": "-2"
+  },
+  {
+	"first": "basic",
+	"second": "hammer",
+	"value": "0"
+  },
+  {
+	"first": "slow",
+	"second": "hammer",
+	"value": "2"
+  },
+  {
+	"first": "block",
+	"second": "snake",
+	"value": "-1"
+  },
+  {
+	"first": "parry",
+	"second": "snake",
+	"value": "-1"
+  },
+  {
+	"first": "dodge",
+	"second": "snake",
+	"value": "2"
+  },
+  {
+	"first": "block",
+	"second": "mantis",
+	"value": "-2"
+  },
+  {
+	"first": "parry",
+	"second": "mantis",
+	"value": "2"
+  },
+  {
+	"first": "dodge",
+	"second": "mantis",
+	"value": "0"
+  },
+  {
+	"first": "block",
+	"second": "bear",
+	"value": "1"
+  },
+  {
+	"first": "parry",
+	"second": "bear",
+	"value": "0"
+  },
+  {
+	"first": "dodge",
+	"second": "bear",
+	"value": "-1"
+  },
+  {
+	"first": "block",
+	"second": "tiger",
+	"value": "0"
+  },
+  {
+	"first": "parry",
+	"second": "tiger",
+	"value": "-1"
+  },
+  {
+	"first": "dodge",
+	"second": "tiger",
+	"value": "1"
+  },
+  {
+	"first": "block",
+	"second": "elephant",
+	"value": "2"
+  },
+  {
+	"first": "parry",
+	"second": "elephant",
+	"value": "0"
+  },
+  {
+	"first": "dodge",
+	"second": "elephant",
+	"value": "-2"
+  },
+  {
+	"first": "puncture",
+	"second": "snake",
+	"value": "1"
+  },
+  {
+	"first": "slash",
+	"second": "snake",
+	"value": "-2"
+  },
+  {
+	"first": "pressure",
+	"second": "snake",
+	"value": "1"
+  },
+  {
+	"first": "puncture",
+	"second": "mantis",
+	"value": "0"
+  },
+  {
+	"first": "slash",
+	"second": "mantis",
+	"value": "2"
+  },
+  {
+	"first": "pressure",
+	"second": "mantis",
+	"value": "-2"
+  },
+  {
+	"first": "puncture",
+	"second": "bear",
+	"value": "-2"
+  },
+  {
+	"first": "slash",
+	"second": "bear",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "bear",
+	"value": "1"
+  },
+  {
+	"first": "puncture",
+	"second": "tiger",
+	"value": "1"
+  },
+  {
+	"first": "slash",
+	"second": "tiger",
+	"value": "1"
+  },
+  {
+	"first": "pressure",
+	"second": "tiger",
+	"value": "-2"
+  },
+  {
+	"first": "puncture",
+	"second": "elephant",
+	"value": "0"
+  },
+  {
+	"first": "slash",
+	"second": "elephant",
+	"value": "-2"
+  },
+  {
+	"first": "pressure",
+	"second": "elephant",
+	"value": "2"
+  },
+  {
+	"first": "fast",
+	"second": "snake",
+	"value": "1"
+  },
+  {
+	"first": "basic",
+	"second": "snake",
+	"value": "1"
+  },
+  {
+	"first": "slow",
+	"second": "snake",
+	"value": "-2"
+  },
+  {
+	"first": "fast",
+	"second": "mantis",
+	"value": "2"
+  },
+  {
+	"first": "basic",
+	"second": "mantis",
+	"value": "0"
+  },
+  {
+	"first": "slow",
+	"second": "mantis",
+	"value": "-2"
+  },
+  {
+	"first": "fast",
+	"second": "bear",
+	"value": "-1"
+  },
+  {
+	"first": "basic",
+	"second": "bear",
+	"value": "0"
+  },
+  {
+	"first": "slow",
+	"second": "bear",
+	"value": "1"
+  },
+  {
+	"first": "fast",
+	"second": "tiger",
+	"value": "0"
+  },
+  {
+	"first": "basic",
+	"second": "tiger",
+	"value": "-1"
+  },
+  {
+	"first": "slow",
+	"second": "tiger",
+	"value": "1"
+  },
+  {
+	"first": "fast",
+	"second": "elephant",
+	"value": "-2"
+  },
+  {
+	"first": "basic",
+	"second": "elephant",
+	"value": "0"
+  },
+  {
+	"first": "slow",
+	"second": "elephant",
+	"value": "2"
+  }
+]
