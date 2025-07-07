@@ -21,15 +21,21 @@ func _ready() -> void:
 	#get_tree().bourse.resource.after_init()
 	
 func init_arr() -> void:
-	arr.essence = ["will", "mind", "body"]
+	arr.aspect = ["will", "mind", "body"]
+	arr.success = [-6, -3, -1, 0, 1, 3, 6]
+	arr.pace = [-3, -2, -1, 0, 1, 2, 3]
+	arr.element = ["aqua", "wind", "fire", "earth", "acid", "ice", "vapor", "dirt", "cloud", "lightning", "dust", "plasma", "lava", "metal"]
+	arr.template = ["weapon", "totem", "pace"]
+	arr.role = ["offense", "defense"]
 	
 func init_dict() -> void:
 	init_direction()
 	
 	init_synergy()
 	init_combo()
-	init_temp()
+	init_pace()
 	init_essence()
+	init_swap()
 	
 func init_direction() -> void:
 	dict.direction = {}
@@ -68,7 +74,7 @@ func init_synergy() -> void:
 	dict.tag.all = {}
 	dict.tag.defense = ["block", "parry", "dodge"]
 	dict.tag.offense = ["puncture", "slash", "pressure"]
-	dict.tag.temp = ["fast", "basic", "slow"]
+	dict.tag.pace = ["fast", "basic", "slow"]
 	dict.tag.weapon = ["spear", "dagger", "axe", "sword", "hammer"]
 	dict.tag.totem = ["snake", "mantis", "bear", "tiger", "elephant"]
 	
@@ -103,10 +109,10 @@ func init_combo() -> void:
 	
 	for totem in dict.tag.totem:
 		for weapon in dict.tag.weapon:
-			for temp in dict.tag.temp:
+			for pace in dict.tag.pace:
 				for defense in dict.tag.defense:
 					var value = 0
-					var combo = [totem, weapon,temp, defense]
+					var combo = [totem, weapon, pace, defense]
 					
 					for _i in combo.size():
 						for _j in range(_i + 1, combo.size(), 1):
@@ -127,13 +133,13 @@ func init_combo() -> void:
 					#var combo = {}
 					#combo.totem = totem
 					#combo.weapon = weapon
-					#combo.temp = temp
+					#combo.pace = pace
 					#combo.offense = offense
 					
 					#for _i in combo.keys().size():
 						#for _j in range(_i + 1, combo.keys().size(), 1):
 						
-					var combo = [totem, weapon,temp, offense]
+					var combo = [totem, weapon, pace, offense]
 					
 					for _i in combo.size():
 						for _j in range(_i + 1, combo.size(), 1):
@@ -157,21 +163,25 @@ func init_combo() -> void:
 	#print([values[0], dict.combo.group[values[0]]])
 	#print([values[values.size()-1], dict.combo.group[values[values.size()-1]]])
 	
-func init_temp() -> void:
-	dict.temp = {}
-	dict.temp.weight = {}
-	dict.temp.weight[-3] = 2
-	dict.temp.weight[-2] = 3
-	dict.temp.weight[-1] = 4
-	dict.temp.weight[0] = 5
-	dict.temp.weight[1] = 4
-	dict.temp.weight[2] = 3
-	dict.temp.weight[3] = 2
+func init_pace() -> void:
+	dict.pace = {}
+	dict.pace.weight = {}
+	dict.pace.weight[-3] = 2
+	dict.pace.weight[-2] = 3
+	dict.pace.weight[-1] = 4
+	dict.pace.weight[0] = 5
+	dict.pace.weight[1] = 4
+	dict.pace.weight[2] = 3
+	dict.pace.weight[3] = 2
+	dict.pace.type = {}
+	dict.pace.type[-1] = "slow"
+	dict.pace.type[0] = "basic"
+	dict.pace.type[1] = "fast"
 	
 func init_essence() -> void:
 	dict.essence = {}
 	
-	for essence in arr.essence:
+	for essence in arr.aspect:
 		dict.essence[essence] = {}
 	
 	var path = "res://entities/essence/essence.json"
@@ -183,6 +193,12 @@ func init_essence() -> void:
 				dict.essence[key][essence.type] = {}
 				
 			dict.essence[key][essence.type][essence.subtype] = int(essence[key])
+	
+func init_swap() -> void:
+	dict.swap = {}
+	dict.swap.role = {}
+	dict.swap.role["offense"] = "defense"
+	dict.swap.role["defense"] = "offense"
 	
 func save(path_: String, data_): #: String
 	var file = FileAccess.open(path_, FileAccess.WRITE)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceDiceElement" load_steps=2 format=3 uid="uid://coi2vwlkpuhvd"]
+
+[ext_resource type="Script" uid="uid://dhcg4oa0am3yk" path="res://resources/dice/element/resource_dice_element.gd" id="1_h1cxm"]
+
+[resource]
+script = ExtResource("1_h1cxm")
+type = "plasma"
+tenets = Array[String](["onslaught", "onslaught", "onslaught", "onslaught", "acceleration", "acceleration"])
+values = Array[int]([3, 4, 6, 7, 7, 9])
+metadata/_custom_type_script = "uid://dhcg4oa0am3yk"

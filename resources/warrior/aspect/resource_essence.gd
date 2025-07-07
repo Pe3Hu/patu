@@ -23,6 +23,5 @@ func init_offense() -> void:
 	
 func add_element() -> void:
 	var element = Global.get_random_key(Global.dict.essence[type]["element"])
-	element = "aqua"
 	var resource = load("res://resources/dice/element/d6_element_" + element + ".tres")
 	elements.append(resource)

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResourceDiceSuccess" load_steps=2 format=3 uid="uid://clabins7i6jug"]
+
+[ext_resource type="Script" uid="uid://ck7e7o7g3e5af" path="res://resources/dice/success/resource_dice_success.gd" id="1_agdej"]
+
+[resource]
+script = ExtResource("1_agdej")
+values = Array[int]([2, 2, 2, 1, 0, -1])
+metadata/_custom_type_script = "uid://ck7e7o7g3e5af"

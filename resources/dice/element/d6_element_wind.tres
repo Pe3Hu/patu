@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceDiceElement" load_steps=2 format=3 uid="uid://dfhhl1srl0dig"]
+
+[ext_resource type="Script" uid="uid://dhcg4oa0am3yk" path="res://resources/dice/element/resource_dice_element.gd" id="1_qe78p"]
+
+[resource]
+script = ExtResource("1_qe78p")
+type = "wind"
+tenets = Array[String](["onslaught", "deceleration", "deceleration", "deceleration", "acceleration", "acceleration"])
+values = Array[int]([4, 1, 3, 4, 2, 4])
+metadata/_custom_type_script = "uid://dhcg4oa0am3yk"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ResourcePool" load_steps=6 format=3 uid="uid://jgccbmlantlf"]
+
+[ext_resource type="Script" uid="uid://ck7e7o7g3e5af" path="res://resources/dice/success/resource_dice_success.gd" id="1_cae7x"]
+[ext_resource type="Resource" uid="uid://de5jqgrqtsdbs" path="res://resources/dice/success/d6_success_0.tres" id="2_jvwmw"]
+[ext_resource type="Resource" uid="uid://wmv8hq0b3fc1" path="res://resources/dice/success/d6_success_-1.tres" id="3_jvwmw"]
+[ext_resource type="Resource" uid="uid://s86f82m0jmq3" path="res://resources/dice/success/d6_success_-6.tres" id="3_srav5"]
+[ext_resource type="Script" uid="uid://b8xm7imiyucp6" path="res://resources/dice/pool/resource_pool.gd" id="4_dtcab"]
+
+[resource]
+script = ExtResource("4_dtcab")
+dices = Array[ExtResource("1_cae7x")]([ExtResource("2_jvwmw"), ExtResource("3_jvwmw"), ExtResource("3_srav5")])
+metadata/_custom_type_script = "uid://b8xm7imiyucp6"

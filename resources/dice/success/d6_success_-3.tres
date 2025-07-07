@@ -4,6 +4,5 @@
 
 [resource]
 script = ExtResource("1_7s4vu")
-types = Array[String]([])
 values = Array[int]([1, 1, 0, -1, -2, -2])
 metadata/_custom_type_script = "uid://ck7e7o7g3e5af"
