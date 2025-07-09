@@ -11,6 +11,10 @@ var essences: Array[ResourceEssence] :
 var expectations: Dictionary
 
 
+
+func _init(essences_: Array[ResourceEssence]) -> void:
+	essences = essences_
+	
 func process_essences() -> void:
 	expectations = {}
 	

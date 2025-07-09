@@ -27,6 +27,11 @@ func init_arr() -> void:
 	arr.element = ["aqua", "wind", "fire", "earth", "acid", "ice", "vapor", "dirt", "cloud", "lightning", "dust", "plasma", "lava", "metal"]
 	arr.template = ["weapon", "totem", "pace"]
 	arr.role = ["offense", "defense"]
+	arr.archetype = ["weapon", "totem"]
+	arr.mediator = ["vendor", "customer"]
+	arr.temperament = ["calm", "greedy"]
+	
+	#arr.cliche = ["offense", "defense", "element"]
 	
 func init_dict() -> void:
 	init_direction()
@@ -36,6 +41,12 @@ func init_dict() -> void:
 	init_pace()
 	init_essence()
 	init_swap()
+	init_archetype()
+	
+	dict.step = {}
+	dict.step.role = {}
+	dict.step.role["vendor"] = "surcharge"
+	dict.step.role["customer"] = "discount"
 	
 func init_direction() -> void:
 	dict.direction = {}
@@ -199,6 +210,65 @@ func init_swap() -> void:
 	dict.swap.role = {}
 	dict.swap.role["offense"] = "defense"
 	dict.swap.role["defense"] = "offense"
+	
+func init_archetype() -> void:
+	dict.archetype = {}
+	dict.archetype.triple = {}
+	dict.archetype.synergy = {}
+	dict.archetype.index = {}
+	
+	for archetype in arr.archetype:
+		dict.archetype.triple[archetype] = []
+	
+	var path = "res://entities/archetype/archetype.json"
+	var array = load_data(path)
+	
+	for archetype in array:
+		var values = archetype.values.split(",")
+		dict.archetype.triple[archetype.type].append(values)
+	
+	for weapons in dict.archetype.triple.weapon:
+		for totems in dict.archetype.triple.totem:
+			var archetype = {}
+			archetype.weapons = weapons
+			archetype.totems = totems
+			dict.archetype.index[archetype] = dict.archetype.index.keys().size()
+			
+			dict.archetype.synergy[archetype] = {}
+			dict.archetype.synergy[archetype].total = 0
+			
+			for role in arr.role:
+				dict.archetype.synergy[archetype][role] = {}
+				
+				for tag in dict.tag[role]:
+					dict.archetype.synergy[archetype][role][tag] = 0
+			
+			for weapon in weapons:
+				for totem in totems:
+					dict.archetype.synergy[archetype].total += dict.synergy.value[weapon][totem]
+					
+			for role in arr.role:
+				for tag in dict.tag[role]:
+					for weapon in weapons:
+						dict.archetype.synergy[archetype][role][tag] += dict.synergy.value[weapon][tag]
+					
+					for totem in totems:
+						dict.archetype.synergy[archetype][role][tag] += dict.synergy.value[totem][tag]
+	
+	#var total_sum = {}
+	#
+	#for role in arr.role:
+		#total_sum[role] = {}
+		#
+		#for tag in dict.tag[role]:
+			#total_sum[role][tag] = 0
+	#
+	#for archetype in dict.archetype.synergy:
+		#for role in arr.role:
+			#for tag in dict.archetype.synergy[archetype][role]:
+				#total_sum[role][tag] += dict.archetype.synergy[archetype][role][tag]
+	#
+	#print(total_sum)
 	
 func save(path_: String, data_): #: String
 	var file = FileAccess.open(path_, FileAccess.WRITE)

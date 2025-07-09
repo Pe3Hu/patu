@@ -8,6 +8,9 @@ var templates: Array[ResourceTemplate]
 var tactics: Array[ResourceTactic]
 
 
+func _init(warrior_: ResourceWarrior) -> void:
+	warrior = warrior_
+	
 func duel_preparation() -> void:
 	init_kits()
 	init_templates()
@@ -32,8 +35,7 @@ func init_kits() -> void:
 			var essence = essences.pop_front()
 			kit_essences.append(essence)
 		
-		var kit = ResourceKit.new()
-		kit.essences = kit_essences
+		var kit = ResourceKit.new(kit_essences)
 		kits.append(kit)
 	
 func init_templates() -> void:

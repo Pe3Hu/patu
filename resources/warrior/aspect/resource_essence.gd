@@ -7,21 +7,19 @@ extends Resource
 	set(value_): 
 		type = value_ 
 		
-		init_defense()
-		init_offense()
-		add_element()
-@export_enum("block", "parry", "dodge") var defense: String
-@export_enum("puncture", "slash", "pressure") var offense: String
-@export var elements: Array[ResourceDiceElement]
+		init_cliche()
 
+@export var aspect: ResourceAspect
+@export var cliche: ResourceCliche
 
-func init_defense() -> void:
-	defense = Global.get_random_key(Global.dict.essence[type]["defense"])
+var rank: int = 1
+
+func _init(aspect_: ResourceAspect, type_: String) -> void:
+	aspect = aspect_
+	type = type_
 	
-func init_offense() -> void:
-	offense = Global.get_random_key(Global.dict.essence[type]["offense"])
-	
-func add_element() -> void:
+func init_cliche() -> void:
+	var offense = Global.get_random_key(Global.dict.essence[type]["offense"])
+	var defense = Global.get_random_key(Global.dict.essence[type]["defense"])
 	var element = Global.get_random_key(Global.dict.essence[type]["element"])
-	var resource = load("res://resources/dice/element/d6_element_" + element + ".tres")
-	elements.append(resource)
+	cliche = aspect.warrior.guild.auction.cliche_essences[type][offense][defense][element]

@@ -9,9 +9,12 @@ var winner: ResourceAvatar:
 	set(value_): 
 		winner = value_ 
 		
-		duel
+		duel.finish()
 
 
+func _init(duel_: ResourceDuel) -> void:
+	duel = duel_
+	
 func start() -> void:
 	while !winner:
 		add_episode()
@@ -19,5 +22,5 @@ func start() -> void:
 	duel.end_cycle()
 	
 func add_episode() -> void:
-	var episdoe = ResourceEpisode.new()
-	episdoe.cycle = self
+	var episdoe = ResourceEpisode.new(self)
+	episodes.append(episdoe)

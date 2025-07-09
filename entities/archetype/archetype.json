@@ -1,0 +1,82 @@
+[
+ {
+  "type": "weapon",
+  "values": "spear,dagger,axe"
+ },
+ {
+  "type": "weapon",
+  "values": "spear,dagger,sword"
+ },
+ {
+  "type": "weapon",
+  "values": "spear,dagger,hammer"
+ },
+ {
+  "type": "weapon",
+  "values": "spear,axe,sword"
+ },
+ {
+  "type": "weapon",
+  "values": "spear,axe,hammer"
+ },
+ {
+  "type": "weapon",
+  "values": "spear,sword,hammer"
+ },
+ {
+  "type": "weapon",
+  "values": "dagger,axe,sword"
+ },
+ {
+  "type": "weapon",
+  "values": "dagger,axe,hammer"
+ },
+ {
+  "type": "weapon",
+  "values": "dagger,sword,hammer"
+ },
+ {
+  "type": "weapon",
+  "values": "axe,sword,hammer"
+ },
+ {
+  "type": "totem",
+  "values": "snake,mantis,bear"
+ },
+ {
+  "type": "totem",
+  "values": "snake,mantis,tiger"
+ },
+ {
+  "type": "totem",
+  "values": "snake,mantis,elephant"
+ },
+ {
+  "type": "totem",
+  "values": "snake,bear,tiger"
+ },
+ {
+  "type": "totem",
+  "values": "snake,bear,elephant"
+ },
+ {
+  "type": "totem",
+  "values": "snake,tiger,elephant"
+ },
+ {
+  "type": "totem",
+  "values": "mantis,bear,tiger"
+ },
+ {
+  "type": "totem",
+  "values": "mantis,bear,elephant"
+ },
+ {
+  "type": "totem",
+  "values": "mantis,tiger,elephant"
+ },
+ {
+  "type": "totem",
+  "values": "bear,tiger,elephant"
+ }
+]

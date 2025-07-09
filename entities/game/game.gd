@@ -2,17 +2,22 @@ class_name Game
 extends Node
 
 var warriors: Array[ResourceWarrior]
+var guilds: Array[ResourceGuild]
+var auction: ResourceAuction
 
 
 func _ready() -> void:
-	init_warriors()
-	init_duels()
+	auction = ResourceAuction.new()
+	init_guilds()
+	auction.init_trades()
+	
+	#init_duels()
 	#check_d6()
 	
-func init_warriors() -> void:
-	for _i in 2:
-		var warrior = ResourceWarrior.new()
-		warriors.append(warrior)
+func init_guilds() -> void:
+	for _i in 10:
+		var guild = ResourceGuild.new(auction)
+		guilds.append(guild)
 	
 func init_duels() -> void:
 	var duel = ResourceDuel.new()

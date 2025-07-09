@@ -26,6 +26,9 @@ var pool: ResourcePool
 var wound: int = 0
 
 
+func _init(warrior_: ResourceWarrior) -> void:
+	warrior = warrior_
+
 func calc_synergy(episode_index_: int) -> void:
 	var essence_index =  episode_index_ % template.kit.essences.size()
 	var essence_type = template.kit.essences[essence_index].get(role)

@@ -24,8 +24,7 @@ func start() -> void:
 	
 func init_cycles() -> void:
 	for _i in cycle_cycle:
-		var cycle = ResourceCycle.new()
-		cycle.duel = self
+		var cycle = ResourceCycle.new(self)
 		cycles.append(cycle)
 	
 func start_cycle() -> void:

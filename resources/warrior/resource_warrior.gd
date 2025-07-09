@@ -12,18 +12,19 @@ var weapons: Array[ResourceWeapon]
 var totems: Array[ResourceTotem]
 var paces: Array[ResourceDicePace]
 var aspects: Array[ResourceAspect]
-var will: ResourceAspect = ResourceAspect.new()
-var mind: ResourceAspect = ResourceAspect.new()
-var body: ResourceAspect = ResourceAspect.new()
-var strategy: ResourceStrategy = ResourceStrategy.new()
-var avatar: ResourceAvatar = ResourceAvatar.new()
+var will: ResourceAspect = ResourceAspect.new(self, "will")
+var mind: ResourceAspect = ResourceAspect.new(self, "mind")
+var body: ResourceAspect = ResourceAspect.new(self, "body")
+var strategy: ResourceStrategy = ResourceStrategy.new(self)
+var avatar: ResourceAvatar = ResourceAvatar.new(self)
+var guild: ResourceGuild
 
 var n = 3
 
 
-func _init() -> void:
-	strategy.warrior = self
-	avatar.warrior = self
+func _init(guild_: ResourceGuild) -> void:
+	guild = guild_
+	
 	init_weapons()
 	init_totems()
 	init_paces()
@@ -58,9 +59,6 @@ func init_paces() -> void:
 		options.erase(pace)
 	
 func init_aspects() -> void:
-	will.type = "will"
-	mind.type = "mind"
-	body.type = "body"
 	aspects = [will, mind, body]
 	
 	var values = {}
@@ -76,4 +74,20 @@ func init_aspects() -> void:
 	for aspect in aspects:
 		for _i in values[aspect.type]:
 			aspect.add_essence()
+		
+		aspect.reset()
 	
+func get_saturated_aspects() -> Array:
+	var saturation_value = 149
+	var saturated_aspects = []
+	
+	for aspect in aspects:
+		var lack_of_saturation = int(pow(aspect.limit_value + 1, 2)) - aspect.essences.size()
+		
+		if lack_of_saturation < saturation_value:
+			saturation_value = lack_of_saturation
+			saturated_aspects = [aspect]
+		if lack_of_saturation == saturation_value:
+			saturated_aspects.append(aspect)
+	
+	return saturated_aspects
