@@ -8,8 +8,8 @@ var auction: ResourceAuction
 
 func _ready() -> void:
 	auction = ResourceAuction.new()
-	init_guilds()
-	auction.init_trades()
+	#init_guilds()
+	#auction.init_trades()
 	
 	#init_duels()
 	#check_d6()

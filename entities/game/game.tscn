@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://buh3412b0qtpp"]
+[gd_scene load_steps=3 format=3 uid="uid://buh3412b0qtpp"]
 
 [ext_resource type="Script" uid="uid://di68tvdks1h4y" path="res://entities/game/game.gd" id="1_uqg41"]
+[ext_resource type="PackedScene" uid="uid://h2p34mkqraem" path="res://entities/stronghold/stronghold.tscn" id="2_5xshk"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_uqg41")
+
+[node name="Stronghold" parent="." instance=ExtResource("2_5xshk")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://owjyvc362gyj"]
+
+[ext_resource type="Script" uid="uid://cqycdvmcaqwen" path="res://entities/stronghold/region/region.gd" id="1_7bw3g"]
+
+[node name="Region" type="Polygon2D"]
+polygon = PackedVector2Array(0, 0, 100, 0, 0, 100)
+script = ExtResource("1_7bw3g")

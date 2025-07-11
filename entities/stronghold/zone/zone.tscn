@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://swebvmtu0vy6"]
+
+[ext_resource type="Script" uid="uid://m1n4x1t00aqs" path="res://entities/stronghold/zone/zone.gd" id="1_jn17f"]
+
+[node name="Zone" type="Node2D"]
+script = ExtResource("1_jn17f")
